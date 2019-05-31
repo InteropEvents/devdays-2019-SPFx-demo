@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "e81a1b68-686e-412f-90ac-cb80f2544398",
+  "alias": "LeadsWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  
+  // Make it available for Microsoft Teams
+  "supportedHosts": ["SharePointWebPart", "TeamsTab"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "LOB" },
+    "title": { "default": "Leads" },
+    "description": { "default": "Company Leads from the LOB system" },
+    "officeFabricIconFontName": "DynamicSMBLogo",
+    "properties": {
+      "description": "Leads",
+      "demo": true
+    }
+  }]
+}
